@@ -1,10 +1,10 @@
 CACHE MANIFEST
-#658810402.740491
+#658843926.841326
 
 ../index.html
 HYPE-736.thin.min.js
 HYPE-736.full.min.js
-index_hype_generated_script.js?8026
+index_hype_generated_script.js?37958
 bg.jpg
 bg_2x.jpg
 clickprize.png
@@ -21,12 +21,8 @@ star2_2x.png
 %E9%A9%AC%E5%85%8B%E6%9D%AF_2x.png
 %E4%BB%A3%E9%87%91%E5%8A%B5.png
 %E4%BB%A3%E9%87%91%E5%8A%B5_2x.png
-tianmao.png
-tianmao_2x.png
 %E5%B0%8F%E6%B1%BD%E8%BD%A6.png
 %E5%B0%8F%E6%B1%BD%E8%BD%A6_2x.png
-tshirt.png
-tshirt_2x.png
 %E6%8A%BD%E5%A5%96%E7%BB%84.png
 %E6%8A%BD%E5%A5%96%E7%BB%84_2x.png
 boxbg.png
@@ -37,8 +33,6 @@ boxlight_2x.png
 %E7%9B%B2%E7%9B%92%E7%B4%A0%E6%9D%90_2x.png
 huan.png
 huan_2x.png
-programer.png
-programer_2x.png
 dot.png
 dot_2x.png
 prizecar.png
@@ -51,12 +45,20 @@ prizecup.png
 prizecup_2x.png
 prizejingling.png
 prizejingling_2x.png
+prizekeyboard.png
+prizekeyboard_2x.png
+programer.png
+programer_2x.png
 prizequan.png
 prizequan_2x.png
 prizetshirt.png
 prizetshirt_2x.png
-prizekeyboard.png
-prizekeyboard_2x.png
+tshirt.png
+tshirt_2x.png
+tianmao.png
+tianmao_2x.png
+bag.png
+bag_2x.png
 PIE.htc
 blank.gif
 iframe-inneruser.html
