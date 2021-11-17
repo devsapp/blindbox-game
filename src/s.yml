@@ -12,12 +12,12 @@ services:
       region: cn-hangzhou
       service:
         name: blindbox-service
-        description: null
+        description: 盲盒应用的服务
         internetAccess: true
         nasConfig: auto
       function:
         name: api
-        description: null
+        description: 盲盒应用的函数
         runtime: custom
         codeUri: ./code
         handler: index.handler
