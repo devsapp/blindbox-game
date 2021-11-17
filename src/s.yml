@@ -1,0 +1,42 @@
+edition: 1.0.0 #  命令行YAML规范版本，遵循语义化版本（Semantic Versioning）规范
+name: blindbox-game #  项目名称
+access: default #  秘钥别名
+services:
+  blindbox:
+    component: devsapp/fc # 组件名称
+    actions:
+      pre-deploy:
+        - run: npm i
+          path: ./code
+    props:
+      region: cn-hangzhou
+      service:
+        name: blindbox-service
+        description: null
+        internetAccess: true
+        nasConfig: auto
+      function:
+        name: api
+        description: null
+        runtime: custom
+        codeUri: ./code
+        handler: index.handler
+        memorySize: 256
+        timeout: 10
+        gpuMemorySize: 8192
+        caPort: 9000
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*

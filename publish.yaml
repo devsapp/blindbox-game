@@ -1,0 +1,10 @@
+Type: Application
+Name: blindbox-game
+Version: 0.0.1
+Category: 全栈应用
+HomePage: 'https://serverless-devs.com/zh-cn'
+Tags:
+  - 全栈应用
+  - Web框架
+  - h5创意活动
+Description: 使用低代码工具 hype4 结合 函数计算 构建的 创意h5 抽盲盒活动

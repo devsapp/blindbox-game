@@ -1,0 +1,19 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {},
+  "dependencies": {
+    "@webserverless/fc-express": "^1.0.0",
+    "express": "^4.17.1",
+    "raw-body": "^2.4.1",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "@serverless-devs/sandbox": "latest"
+  }
+}
