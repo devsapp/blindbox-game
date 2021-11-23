@@ -62,6 +62,23 @@ const queryInformation = async (params) => {
   }
 }
 
+// 查询中奖状态
+const getPrizeNumber = async (params) => {
+  try {
+    const result = await _request.get('/api/v1/bba/status', params);
+  
+    return {
+      code: 200,
+      data: JSON.parse(result.text)
+    };
+  } catch (e) {
+    return {
+      code: 500,
+      message: e.message
+    }
+  }
+}
+
 
 
 
@@ -69,7 +86,7 @@ const queryInformation = async (params) => {
 module.exports = {
   prize,
   addInformation,
-  queryInformation
-
+  queryInformation,
+  getPrizeNumber
 
 }

@@ -1,14 +1,11 @@
 CACHE MANIFEST
-#658843926.841326
+#659331737.054101
 
 ../index.html
 HYPE-736.thin.min.js
 HYPE-736.full.min.js
-index_hype_generated_script.js?37958
-bg.jpg
-bg_2x.jpg
-clickprize.png
-clickprize_2x.png
+HYPE-736.waypoints.min.js
+index_hype_generated_script.js?33962
 star3.png
 star3_2x.png
 star1.png
@@ -59,6 +56,15 @@ tianmao.png
 tianmao_2x.png
 bag.png
 bag_2x.png
+prizeword.png
+prizeword_2x.png
+prizearrow.png
+prizearrow_2x.png
+prizerecordcontainer.png
+bg2.jpg
+bg2_2x.jpg
+prizerule.png
+prizerule_2x.png
 PIE.htc
 blank.gif
 iframe-inneruser.html

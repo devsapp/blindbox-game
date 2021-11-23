@@ -2,29 +2,35 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
-const { 
-    prize,
-    addInformation,
-    queryInformation } = require('./services');
+const {
+  prize,
+  addInformation,
+  getPrizeNumber,
+  queryInformation } = require('./services');
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('www')); 
+app.use(express.static('www'));
 app.get('/', (req, res) => {
-    res.header('Content-Type', 'text/html;charset=utf-8')
-    const filePath = path.resolve(__dirname, './www/index.html');
-    const html = fs.readFileSync(filePath, 'utf8');
-    res.send(html);
+  res.header('Content-Type', 'text/html;charset=utf-8')
+  const filePath = path.resolve(__dirname, './www/index.html');
+  const html = fs.readFileSync(filePath, 'utf8');
+  res.send(html);
 });
 
-app.post('/api/v1/bba/prize', async(req, res) => {
+app.post('/api/v1/bba/prize', async (req, res) => {
 
-    const uid = req.get('x-fc-account-id');
-    const reult = await prize(uid)
-    res.send(reult)
+  const uid = req.get('x-fc-account-id');
+  const reult = await prize(uid)
+  res.send(reult)
 });
 
-app.get('/api/v1/bba/information', async(req, res) => {
+app.get('/api/v1/bba/status', async (req, res) => {
+  const result = await getPrizeNumber({});
+  res.send(result);
+})
+
+app.get('/api/v1/bba/information', async (req, res) => {
   const uid = req.get('x-fc-account-id');
   const token = req.query.token;
   const result = await queryInformation({
@@ -33,7 +39,7 @@ app.get('/api/v1/bba/information', async(req, res) => {
   res.send(result)
 });
 
-app.post('/api/v1/bba/information', async(req, res) => {
+app.post('/api/v1/bba/information', async (req, res) => {
   const uid = req.get('x-fc-account-id');
   const token = req.body.token;
   const name = req.body.name;
@@ -46,8 +52,8 @@ app.post('/api/v1/bba/information', async(req, res) => {
 });
 
 app.listen(9000, () => {
-    console.log('start success.');
+  console.log('start success.');
 }).on('error', (e) => {
-    console.error(e.code, e.message)
+  console.error(e.code, e.message)
 });
 
