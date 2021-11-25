@@ -14,7 +14,6 @@ services:
         name: blindbox-service
         description: 盲盒应用的服务
         internetAccess: true
-        nasConfig: auto
       function:
         name: api
         description: 盲盒应用的函数
