@@ -9,7 +9,7 @@ services:
         - run: npm i
           path: ./code
     props:
-      region: cn-shanghai
+      region: ap-southeast-1
       service:
         name: blindbox-service
         description: 盲盒应用的服务
