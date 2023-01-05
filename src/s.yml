@@ -21,8 +21,7 @@ services:
         codeUri: ./code
         handler: index.handler
         memorySize: 256
-        timeout: 10
-        gpuMemorySize: 8192
+        timeout: 60
         caPort: 9000
       triggers:
         - name: httpTrigger
